@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="encabezado"><img src="Imagen/MainLogo.png">
-      <div class="search">
-          <input type="text" placeholder="Ingresa tu usuario :P">
-      </div>
+    <div class="encabezado">
+      <img class="logo" src="Imagen/MainLogo.png">
+        <div class="search">
+          <input id="user" class="user" type="text" placeholder="Ingresa tu usuario :P">
+        </div>
     </div>
-
     <div class="cuadro1">
       <img class="pfp-jane" src="Imagen/jane.jpeg" alt="janepfp">
-      <div class="pfp-info"><h2 class="titulo">Jane Doe</h2>
+      <div class="pfp-info"><h1 class="titulo">Jane Doe</h1>
         <h4>Email:</h4>
           <p class="texto">jane_doe@email.com</p><br>
         <h4>Fecha de nacimiento:</h4>
@@ -31,16 +31,48 @@
         <button class="follow-boton">Follow Me</button>
       </div>       
     </div>
+    <div class="contenedor">
+      <div class="cuadro2">
+        <p class="time-post">Publicado hace 1 semana</p>
+        <img class="pic-post" src="Imagen/post.jpeg">
+          <div class="contenedor">
+            <button class="btn-like" id="btn-like">Like</button>
+            <div class="contador-likes">1812 likes</div>
+          </div>
+          <h3>Comentarios</h3>
+        <div class="fake-comments">
+          <div class="fake-1">
+            <h4>Juan Perez</h4>
+              <p class="bot1">¡Wow!, esa foto de Tokio es impresionante!🌆✨</p><br>
+          </div>
+          <div class="fake-2">
+            <h4 class="bot3">Kathleen J Rennie</h4>
+              <p class="bot2">¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
+          </div>
+        </div>
+        <ul id="comentarios" class="comentarios">
+          
+        </ul>
+        <div class="input-comment">
 
-    <div class="cuadro-2">
-      <p>Publicado hace una semana</p>
-        <img src="Imagen/post.jpeg">
-      <p></p>
+          <div id="error-message" style="display: none;">Error: El usuario no está registrado.</div>
+
+          <input id="new-comment" class="new-comment" type="text" placeholder="Deja tu comentario">
+            <button onclick="nComentario()" class="btn-message">Comentar</button>
+        </div>
+      </div>
+
+      <div class="cuadro3">
+        <p class="titulo-yo">Sobre mí</p><br>
+        <p class="super-yo">¡Hola a todos! Soy Jane, y actualmente vivo en la vibrante y 
+          emocionante ciudad de Tokio, Japón. Me encanta capturar
+         la esencia de la vida usbana a través de mi lente, 
+         explorando el contraste entre la arquitectura moderna y las
+         tradiciones centenaria que conviven en esta metrópolis única.
+         Desde rascacielos deslumbrantes y calles bulliciosas
+         hasta templos serenos y jardines tranquilos, encuentro
+        inspiración en cada rincón de esta increíble ciudad.</p>
+      </div>
     </div>
-
-    <div class="cuadro-3">
-      <p>Publicado hace una semana</p>
-    </div>
-
 </body>
 </html>

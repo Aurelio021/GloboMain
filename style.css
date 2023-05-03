@@ -24,6 +24,26 @@ font-family: 'Montserrat', sans-serif;
 	border-radius: 50%;
 }
 
+.user{
+	background-color: rgba(219,234,254,255);
+  color: #3b82f6;
+  border: black;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.user-search::placeholder{
+	color: #3b82f6; 
+}
+
+.logo{
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+}
+
 .cuadro1{
 	position: relative;
 	background-color: azure;
@@ -34,12 +54,40 @@ font-family: 'Montserrat', sans-serif;
 	height: 250px;
 }
 
+.contenedor{
+	display: flex;
+	justify-content: space-between;
+	gap: 75px;
+}
+
+.cuadro2{
+	background-color: azure;
+	margin-top: 75px;
+	margin-left: 100px;
+	border-radius: 20px;
+	width: 800px;
+	height: 900px;
+	padding: 15px 35px 35px 35px;
+}
+
+.cuadro3{
+	position: static;
+	background-color: azure;
+	border-radius: 20px;
+	height: 500px;
+	width: 400px;
+	margin-right: 100px;
+	margin-top: 75px;
+	padding: 15px 35px 35px 35px;
+	text-align: left;
+}
+
 .pfp-jane{
 	position:absolute;
-	top: 45px;
-	left: 5%;
+	top: 20px;
+	left: 3%;
 	border-radius: 50%;
-	width: 150px;
+	width: 200px;
 	border: 5px solid rgba(31, 79, 180, 0.651);
 }
 
@@ -50,8 +98,9 @@ font-family: 'Montserrat', sans-serif;
 
 .titulo{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 24px;
+	font-size: 40px;
   font-weight: 700;
+	margin-top: 10px;
 }
 
 .texto{
@@ -86,4 +135,138 @@ p {
 img{
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.time-post{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+  font-weight: 300;
+}
+
+.pic-post{
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin-top: 10px;
+	border-radius: 15px;
+}
+
+.titulo-yo{
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.super-yo{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+  font-weight: 500;
+	padding: 0;
+	margin: 0;
+	max-height: max-content;
+}
+
+.btn-like{
+	background-color: #f0efea;
+  color: #3b82f6;
+	border: black;
+	margin: 20px 10px 10px 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+	font-weight: 700;
+	cursor:pointer;
+}
+
+.contador-likes{
+	color: #3b82f6;
+	background-color: #f0efea;
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin: 20px 0px 10px 10px;
+	font-size: 15px;
+	font-weight: 500;
+	cursor:pointer;
+}
+
+.new-comment{
+	background-color: #f0efea;
+  color: black;
+	border: black;
+	margin-top: 25px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+	width: 400px;
+}
+
+.new-comment::placeholder{
+	color: black; 
+}
+
+.btn-message{
+  background-color: #3b82f6;
+  color: white;
+  border: black;
+	margin-top: 25px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.fake-comments{
+	position: relative;
+	width: max-content;
+	height: 110px;
+}
+
+.bot2{
+	position: absolute;
+	width: 350px;
+	height: 31;
+	right: -4%;
+	top: 34%;
+	padding: 0;
+}
+
+.bot3{
+	position: absolute;
+	margin: 0px 0px 15px 0px;
+}
+
+.comentarios{
+background-color: rgb(255, 255, 255, 0.7);
+width: 100%;
+height: 60px;
+border-radius: 20px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding: 0 0 0 20px;
+color: black;
+}
+
+.close{
+	font-size: 12px;
+	position: absolute;
+	right: 150px;
+	width: 20px;
+	z-index: 20;
+	transition-duration: 250ms;
+	display: block;
+	cursor: pointer;
+	color: red;
+}
+
+.comentario{
+	background-color: rgb(255, 255, 255, 0.7);
+	width: 100%;
+	height: 60px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 0 0 20px;
+	color: black;	
 }
